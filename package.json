@@ -10,7 +10,8 @@
     "url": "felixlange.dev"
   },
   "dependencies": {
-    "com.unity.timeline": "1.7.5"
+    "com.unity.timeline": "1.7.5",
+    "com.unity.inputsystem": "1.7.0"
   },
   "licensesUrl": "https://github.com/fx-lange/unity-storytelling-utils/blob/main/LICENSE"
 }
