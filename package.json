@@ -1,0 +1,16 @@
+{
+  "name": "com.fxlange.storytelling-utils",
+  "version": "0.1.0",
+  "displayName": "Storytelling Utils",
+  "description": "Tools & extensions for our storytelling projects in Unity.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Felix Lange",
+    "email": "mail@felixlange.dev",
+    "url": "felixlange.dev"
+  },
+  "dependencies": {
+    "com.unity.timeline": "1.7.5"
+  },
+  "licensesUrl": "https://github.com/fx-lange/unity-storytelling-utils/blob/main/LICENSE"
+}
