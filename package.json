@@ -1,6 +1,6 @@
 {
   "name": "com.fxlange.storytelling-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Storytelling Utils",
   "description": "Tools & extensions for our storytelling projects in Unity.",
   "unity": "2022.3",
