@@ -1,0 +1,38 @@
+PauseMarker
+{
+    width: 18px;
+    height: 18px;
+    background-image: resource("pause-collapsed");
+}
+
+/* Active Marker State -> Corresponds to GUIStyle.onNormal */
+PauseMarker:checked
+{
+    background-image: resource("pause-normal");
+}
+
+/* Selected Marker State -> Corresponds to GUIStyle.onFocused */
+PauseMarker:hover:focus:checked
+{
+    background-image: resource("pause-selected");
+}
+
+/* Collapsed Marker State -> Corresponds to GUIStyle.normal */
+JumpDestinationMarker
+{
+    width: 18px;
+    height: 18px;
+    background-image: resource("destination_collapsed");
+}
+
+/* Active Marker State -> Corresponds to GUIStyle.onNormal */
+JumpDestinationMarker:checked
+{
+    background-image: resource("destination_normal");
+}
+
+/* Selected Marker State -> Corresponds to GUIStyle.onFocused */
+JumpDestinationMarker:hover:focus:checked
+{
+    background-image: resource("destination_selected" );
+}
