@@ -1,8 +1,8 @@
 {
   "name": "com.fxlange.storytelling-utils",
-  "version": "0.2.0",
-  "displayName": "Storytelling Utils",
-  "description": "Tools & extensions for our storytelling projects in Unity.",
+  "version": "0.3.0",
+  "displayName": "Immersive Storytelling Utils",
+  "description": "Tools & extensions for our immersive storytelling projects in Unity.",
   "unity": "2022.3",
   "author": {
     "name": "Felix Lange",
@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "com.unity.timeline": "1.7.5",
-    "com.unity.inputsystem": "1.7.0"
+    "com.unity.inputsystem": "1.7.0",
+    "com.meta.xr.sdk.core": "71.0.0" 
   },
   "licensesUrl": "https://github.com/fx-lange/unity-storytelling-utils/blob/main/LICENSE"
 }

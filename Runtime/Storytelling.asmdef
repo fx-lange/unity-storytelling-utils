@@ -3,6 +3,7 @@
   "rootNamespace": "StorytellingUtils",
   "references": [
     "GUID:75469ad4d38634e559750d17036d5f7c",
-    "GUID:f06555f75b070af458a003d92f9efb00"
+    "GUID:f06555f75b070af458a003d92f9efb00",
+    "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30"
   ]
 }
