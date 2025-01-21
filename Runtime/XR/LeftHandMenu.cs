@@ -5,10 +5,9 @@ namespace StorytellingUtils.XR
     public class LeftHandMenu : MonoBehaviour
     {
         [SerializeField] private GameObject _menu;
-        [SerializeField] private int _activationPressCount = 4;
+        [SerializeField][Range(1,5)] private int _activationPressCount = 4;
         [SerializeField] private float _maxPressInterval = 2f;
         
-        private bool _activated = false;
         private float _lastPress;
         private int _pressCount = 0;
         
@@ -16,22 +15,20 @@ namespace StorytellingUtils.XR
         {
             if (OVRInput.GetDown(OVRInput.Button.Start))
             {
-                if (_activated)
+                if (_menu.activeSelf)
                 {
-                    Debug.Log("START MENU");
-                    _menu.SetActive(!_menu.activeSelf);
+                    _menu.SetActive(false);
+                    return;
                 }
                 
                 _lastPress = Time.time;
                 _pressCount++;
-            }
-
-            if (_pressCount >= _activationPressCount)
-            {
-                _activated = !_activated;
-                _pressCount = 0;
                 
-                _menu.SetActive(_activated);
+                if (_pressCount >= _activationPressCount)
+                {
+                    _menu.SetActive(true);
+                    _pressCount = 0;
+                }
             }
 
             if (Time.time - _lastPress > _maxPressInterval)
