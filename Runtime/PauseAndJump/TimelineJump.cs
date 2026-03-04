@@ -14,7 +14,7 @@ namespace StorytellingUtils.PauseAndJump
         [SerializeField] private List<PauseReceiver> _pauseReceivers; 
         [SerializeField] private float jumpBackLeeway = 1f;
 
-        public event Action<int, string> OnArrived = delegate { };
+        public static event Action<int, string> OnArrived = delegate { };
 
         private List<IMarker> _markers = new List<IMarker>();
         private PlayableDirector _director;
