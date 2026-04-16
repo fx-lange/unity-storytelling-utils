@@ -19,7 +19,7 @@ namespace StorytellingUtils.XR
         {
             if (OVRInput.GetDown(OVRInput.Button.Start))
             {
-                if (_menu.activeSelf)
+                if (_menu != null && _menu.activeSelf)
                 {
                     _menu.SetActive(false);
                     onMenuClosed?.Invoke();
@@ -31,7 +31,7 @@ namespace StorytellingUtils.XR
 
                 if (_pressCount >= _activationPressCount)
                 {
-                    _menu.SetActive(true);
+                    if (_menu != null) _menu.SetActive(true);
                     onMenuOpened?.Invoke();
                     _pressCount = 0;
                 }
